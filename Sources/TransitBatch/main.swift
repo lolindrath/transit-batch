@@ -8,6 +8,10 @@ let path = "file:///Users/awilli232/personal/transit-batch/input"
 let dest = "file:///Users/awilli232/personal/transit-batch/output"
 
 do {
+    // TODO: Write out config
+    print("  Writing configs...")
+    print("  Done writing configs.")
+
     print("  Reading gtfs...")
     let gtfs = try GTFS(path: path)
     print("  Done reading gtfs.")
