@@ -4,8 +4,12 @@ import GTFS
 print("GTFS to JSON Converter starting...")
 
 // these should be inputs eventually and check them first
-let path = "file:///Users/awilli232/personal/transit-batch/input"
-let dest = "file:///Users/awilli232/personal/transit-batch/output"
+// TODO: eventually take these as options or at least fix the URL thing
+let path = "file://" + FileManager.default.currentDirectoryPath.appending("/input")
+let dest = "file://" + FileManager.default.currentDirectoryPath.appending("/output")
+
+print("  Input set to: \(path)")
+print("  Output set to: \(dest)")
 
 do {
     // TODO: Write out config
