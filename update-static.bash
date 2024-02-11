@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Setup
+mkdir -p output
+mkdir -p input
+
 # Clean up
 rm input/*.zip
 rm input/*.txt
